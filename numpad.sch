@@ -1,4 +1,909 @@
-EESchema Schematic File Version 2
-EELAYER 25 0
+EESchema Schematic File Version 4
+EELAYER 30 0
 EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Label 4650 1350 0    50   ~ 0
+row0
+Text Label 4650 2000 0    50   ~ 0
+row1
+Text Label 4650 2700 0    50   ~ 0
+row2
+Text Label 4650 3400 0    50   ~ 0
+row3
+Text Label 4650 4050 0    50   ~ 0
+row4
+Text Label 6000 850  3    50   ~ 0
+col1
+Text Label 5300 850  3    50   ~ 0
+col0
+Text Label 6700 850  3    50   ~ 0
+col2
+Text Label 7400 850  3    50   ~ 0
+col3
+Text GLabel 4650 1350 0    50   Input ~ 0
+row0
+Text GLabel 4650 2000 0    50   Input ~ 0
+row1
+Text GLabel 4650 2700 0    50   Input ~ 0
+row2
+Text GLabel 4650 3400 0    50   Input ~ 0
+row3
+Text GLabel 4650 4050 0    50   Input ~ 0
+row4
+Text GLabel 5300 750  1    50   Input ~ 0
+col0
+Text GLabel 6000 750  1    50   Input ~ 0
+col1
+Text GLabel 6700 750  1    50   Input ~ 0
+col2
+Text GLabel 7400 750  1    50   Input ~ 0
+col3
+Text GLabel 3300 5500 2    50   Input ~ 0
+reset
+$Comp
+L Device:R R6
+U 1 1 5D2FF982
+P 3200 5300
+F 0 "R6" H 3259 5338 50  0000 L CNN
+F 1 "10K" V 3200 5250 39  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 3200 5300 50  0001 C CNN
+F 3 "~" H 3200 5300 50  0001 C CNN
+	1    3200 5300
+	1    0    0    -1  
+$EndComp
+Text GLabel 1250 7050 0    50   Input ~ 0
+col0
+Text GLabel 1250 7150 0    50   Input ~ 0
+col1
+Text GLabel 1250 7250 0    50   Input ~ 0
+col2
+Text GLabel 1250 7350 0    50   Input ~ 0
+col3
+$Comp
+L Device:LED LED1
+U 1 1 5D2C3A43
+P 5600 7150
+F 0 "LED1" H 5592 6895 50  0000 C CNN
+F 1 "POWER" H 5592 6986 50  0000 C CNN
+F 2 "LED_THT:LED_D3.0mm" H 5600 7150 50  0001 C CNN
+F 3 "~" H 5600 7150 50  0001 C CNN
+	1    5600 7150
+	-1   0    0    1   
+$EndComp
+Wire Notes Line
+	525  4075 525  7775
+Text Notes 2225 4250 2    118  Italic 24
+MCU
+Wire Notes Line
+	3650 4075 3650 7775
+Wire Notes Line
+	525  7775 3650 7775
+Wire Notes Line
+	525  4075 3650 4075
+Wire Notes Line
+	525  4275 3650 4275
+Wire Notes Line
+	4475 6375 4475 7525
+Wire Notes Line
+	4475 7525 6225 7525
+Wire Notes Line
+	6225 7525 6225 6375
+Wire Notes Line
+	6225 6375 4475 6375
+Wire Notes Line
+	4475 6575 6225 6575
+Text Notes 5900 6550 2    118  Italic 24
+POWER LED
+$Comp
+L Device:R R1
+U 1 1 5F140894
+P 5150 7150
+F 0 "R1" V 4943 7150 50  0000 C CNN
+F 1 "1.5k" V 5034 7150 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 5080 7150 50  0001 C CNN
+F 3 "~" H 5150 7150 50  0001 C CNN
+	1    5150 7150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4650 4050 4950 4050
+Wire Wire Line
+	5300 750  5300 950 
+$Comp
+L Device:D_Small D1
+U 1 1 5F03A5D1
+P 5650 1250
+F 0 "D1" V 5696 1180 50  0000 R CNN
+F 1 "1N4148" V 5605 1180 50  0000 R CNN
+F 2 "USER_FOOTPRINTS:D_DO-35_SOD27_P5.08mm_Horizontal" V 5650 1250 50  0001 C CNN
+F 3 "~" V 5650 1250 50  0001 C CNN
+	1    5650 1250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5150 950  5300 950 
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX0
+U 1 1 5F035A25
+P 5000 1000
+F 0 "MX0" H 5033 1223 60  0000 C CNN
+F 1 "MX-NoLED" H 5033 1149 20  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" H 4375 975 60  0001 C CNN
+F 3 "" H 4375 975 60  0001 C CNN
+	1    5000 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX1
+U 1 1 5F04A838
+P 5700 1000
+F 0 "MX1" H 5733 1223 60  0000 C CNN
+F 1 "MX-NoLED" H 5733 1149 20  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" H 5075 975 60  0001 C CNN
+F 3 "" H 5075 975 60  0001 C CNN
+	1    5700 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX2
+U 1 1 5F04CBFB
+P 6400 1000
+F 0 "MX2" H 6433 1223 60  0000 C CNN
+F 1 "MX-NoLED" H 6433 1149 20  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" H 5775 975 60  0001 C CNN
+F 3 "" H 5775 975 60  0001 C CNN
+	1    6400 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX3
+U 1 1 5F04D156
+P 7100 1000
+F 0 "MX3" H 7133 1223 60  0000 C CNN
+F 1 "MX-NoLED" H 7133 1149 20  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" H 6475 975 60  0001 C CNN
+F 3 "" H 6475 975 60  0001 C CNN
+	1    7100 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX4
+U 1 1 5F04D643
+P 5000 1650
+F 0 "MX4" H 5033 1873 60  0000 C CNN
+F 1 "MX-NoLED" H 5033 1799 20  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" H 4375 1625 60  0001 C CNN
+F 3 "" H 4375 1625 60  0001 C CNN
+	1    5000 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX5
+U 1 1 5F04DC34
+P 5650 1650
+F 0 "MX5" H 5683 1873 60  0000 C CNN
+F 1 "MX-NoLED" H 5683 1799 20  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" H 5025 1625 60  0001 C CNN
+F 3 "" H 5025 1625 60  0001 C CNN
+	1    5650 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX6
+U 1 1 5F04E2CF
+P 6400 1650
+F 0 "MX6" H 6433 1873 60  0000 C CNN
+F 1 "MX-NoLED" H 6433 1799 20  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" H 5775 1625 60  0001 C CNN
+F 3 "" H 5775 1625 60  0001 C CNN
+	1    6400 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX8
+U 1 1 5F04F249
+P 5000 2350
+F 0 "MX8" H 5033 2573 60  0000 C CNN
+F 1 "MX-NoLED" H 5033 2499 20  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" H 4375 2325 60  0001 C CNN
+F 3 "" H 4375 2325 60  0001 C CNN
+	1    5000 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX9
+U 1 1 5F04F696
+P 5700 2350
+F 0 "MX9" H 5733 2573 60  0000 C CNN
+F 1 "MX-NoLED" H 5733 2499 20  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" H 5075 2325 60  0001 C CNN
+F 3 "" H 5075 2325 60  0001 C CNN
+	1    5700 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX10
+U 1 1 5F04FCB9
+P 6400 2350
+F 0 "MX10" H 6433 2573 60  0000 C CNN
+F 1 "MX-NoLED" H 6433 2499 20  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" H 5775 2325 60  0001 C CNN
+F 3 "" H 5775 2325 60  0001 C CNN
+	1    6400 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX7
+U 1 1 5F0501A6
+P 7100 1650
+F 0 "MX7" H 7133 1873 60  0000 C CNN
+F 1 "MX-NoLED" H 7133 1799 20  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" H 6475 1625 60  0001 C CNN
+F 3 "" H 6475 1625 60  0001 C CNN
+	1    7100 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Small D7
+U 1 1 5F0557A5
+P 7050 1900
+F 0 "D7" V 7096 1830 50  0000 R CNN
+F 1 "1N4148" V 7005 1830 50  0000 R CNN
+F 2 "USER_FOOTPRINTS:D_DO-35_SOD27_P5.08mm_Horizontal" V 7050 1900 50  0001 C CNN
+F 3 "~" V 7050 1900 50  0001 C CNN
+	1    7050 1900
+	0    -1   -1   0   
+$EndComp
+Connection ~ 5650 1350
+Wire Wire Line
+	5650 1350 6350 1350
+$Comp
+L Device:D_Small D10
+U 1 1 5F055A42
+P 6350 2600
+F 0 "D10" V 6396 2530 50  0000 R CNN
+F 1 "1N4148" V 6305 2530 50  0000 R CNN
+F 2 "USER_FOOTPRINTS:D_DO-35_SOD27_P5.08mm_Horizontal" V 6350 2600 50  0001 C CNN
+F 3 "~" V 6350 2600 50  0001 C CNN
+	1    6350 2600
+	0    -1   -1   0   
+$EndComp
+Connection ~ 6350 1350
+$Comp
+L Device:D_Small D15
+U 1 1 5F055EF6
+P 7050 3300
+F 0 "D15" V 7096 3230 50  0000 R CNN
+F 1 "1N4148" V 7005 3230 50  0000 R CNN
+F 2 "USER_FOOTPRINTS:D_DO-35_SOD27_P5.08mm_Horizontal" V 7050 3300 50  0001 C CNN
+F 3 "~" V 7050 3300 50  0001 C CNN
+	1    7050 3300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Small D2
+U 1 1 5F0562FE
+P 6350 1250
+F 0 "D2" V 6396 1180 50  0000 R CNN
+F 1 "1N4148" V 6305 1180 50  0000 R CNN
+F 2 "USER_FOOTPRINTS:D_DO-35_SOD27_P5.08mm_Horizontal" V 6350 1250 50  0001 C CNN
+F 3 "~" V 6350 1250 50  0001 C CNN
+	1    6350 1250
+	0    -1   -1   0   
+$EndComp
+Connection ~ 4950 2000
+Wire Wire Line
+	4950 2000 5600 2000
+Wire Wire Line
+	4650 2000 4950 2000
+$Comp
+L Device:D_Small D6
+U 1 1 5F05EDCF
+P 6350 1900
+F 0 "D6" V 6396 1830 50  0000 R CNN
+F 1 "1N4148" V 6305 1830 50  0000 R CNN
+F 2 "USER_FOOTPRINTS:D_DO-35_SOD27_P5.08mm_Horizontal" V 6350 1900 50  0001 C CNN
+F 3 "~" V 6350 1900 50  0001 C CNN
+	1    6350 1900
+	0    -1   -1   0   
+$EndComp
+Connection ~ 5600 2000
+$Comp
+L Device:D_Small D11
+U 1 1 5F05F0C1
+P 7050 2600
+F 0 "D11" V 7096 2530 50  0000 R CNN
+F 1 "1N4148" V 7005 2530 50  0000 R CNN
+F 2 "USER_FOOTPRINTS:D_DO-35_SOD27_P5.08mm_Horizontal" V 7050 2600 50  0001 C CNN
+F 3 "~" V 7050 2600 50  0001 C CNN
+	1    7050 2600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5600 2000 6350 2000
+Wire Wire Line
+	4650 2700 4950 2700
+$Comp
+L Device:D_Small D3
+U 1 1 5F06268F
+P 7050 1250
+F 0 "D3" V 7096 1180 50  0000 R CNN
+F 1 "1N4148" V 7005 1180 50  0000 R CNN
+F 2 "USER_FOOTPRINTS:D_DO-35_SOD27_P5.08mm_Horizontal" V 7050 1250 50  0001 C CNN
+F 3 "~" V 7050 1250 50  0001 C CNN
+	1    7050 1250
+	0    -1   -1   0   
+$EndComp
+Connection ~ 4950 2700
+Wire Wire Line
+	4950 2700 5650 2700
+$Comp
+L Device:D_Small D8
+U 1 1 5F062C06
+P 4950 2600
+F 0 "D8" V 4996 2530 50  0000 R CNN
+F 1 "1N4148" V 4905 2530 50  0000 R CNN
+F 2 "USER_FOOTPRINTS:D_DO-35_SOD27_P5.08mm_Horizontal" V 4950 2600 50  0001 C CNN
+F 3 "~" V 4950 2600 50  0001 C CNN
+	1    4950 2600
+	0    -1   -1   0   
+$EndComp
+Connection ~ 5650 2700
+$Comp
+L Device:D_Small D12
+U 1 1 5F06302E
+P 4950 3300
+F 0 "D12" V 4996 3230 50  0000 R CNN
+F 1 "1N4148" V 4905 3230 50  0000 R CNN
+F 2 "USER_FOOTPRINTS:D_DO-35_SOD27_P5.08mm_Horizontal" V 4950 3300 50  0001 C CNN
+F 3 "~" V 4950 3300 50  0001 C CNN
+	1    4950 3300
+	0    -1   -1   0   
+$EndComp
+Connection ~ 6350 2700
+$Comp
+L Device:D_Small D16
+U 1 1 5F06353C
+P 4950 3950
+F 0 "D16" V 4996 3880 50  0000 R CNN
+F 1 "1N4148" V 4905 3880 50  0000 R CNN
+F 2 "USER_FOOTPRINTS:D_DO-35_SOD27_P5.08mm_Horizontal" V 4950 3950 50  0001 C CNN
+F 3 "~" V 4950 3950 50  0001 C CNN
+	1    4950 3950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5150 1600 5300 1600
+Wire Wire Line
+	5800 1600 6000 1600
+Wire Wire Line
+	6550 1600 6700 1600
+Wire Wire Line
+	6350 1350 7050 1350
+Wire Wire Line
+	5150 2300 5300 2300
+Wire Wire Line
+	5850 2300 6000 2300
+Wire Wire Line
+	6550 2300 6700 2300
+Wire Wire Line
+	7250 2300 7400 2300
+Wire Wire Line
+	5650 2700 6350 2700
+Wire Wire Line
+	7400 950  7400 1600
+$Comp
+L Device:D_Small D4
+U 1 1 5F06BBA3
+P 4950 1900
+F 0 "D4" V 4996 1830 50  0000 R CNN
+F 1 "1N4148" V 4905 1830 50  0000 R CNN
+F 2 "USER_FOOTPRINTS:D_DO-35_SOD27_P5.08mm_Horizontal" V 4950 1900 50  0001 C CNN
+F 3 "~" V 4950 1900 50  0001 C CNN
+	1    4950 1900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Small D9
+U 1 1 5F06C006
+P 5650 2600
+F 0 "D9" V 5696 2530 50  0000 R CNN
+F 1 "1N4148" V 5605 2530 50  0000 R CNN
+F 2 "USER_FOOTPRINTS:D_DO-35_SOD27_P5.08mm_Horizontal" V 5650 2600 50  0001 C CNN
+F 3 "~" V 5650 2600 50  0001 C CNN
+	1    5650 2600
+	0    -1   -1   0   
+$EndComp
+Connection ~ 5650 3400
+$Comp
+L Device:D_Small D13
+U 1 1 5F06C315
+P 5650 3300
+F 0 "D13" V 5696 3230 50  0000 R CNN
+F 1 "1N4148" V 5605 3230 50  0000 R CNN
+F 2 "USER_FOOTPRINTS:D_DO-35_SOD27_P5.08mm_Horizontal" V 5650 3300 50  0001 C CNN
+F 3 "~" V 5650 3300 50  0001 C CNN
+	1    5650 3300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX11
+U 1 1 5F06C8DE
+P 7100 2350
+F 0 "MX11" H 7133 2573 60  0000 C CNN
+F 1 "MX-NoLED" H 7133 2499 20  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" H 6475 2325 60  0001 C CNN
+F 3 "" H 6475 2325 60  0001 C CNN
+	1    7100 2350
+	1    0    0    -1  
+$EndComp
+Connection ~ 4950 3400
+Wire Wire Line
+	4650 3400 4950 3400
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX12
+U 1 1 5F06DB52
+P 5000 3050
+F 0 "MX12" H 5033 3273 60  0000 C CNN
+F 1 "MX-NoLED" H 5033 3199 20  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" H 4375 3025 60  0001 C CNN
+F 3 "" H 4375 3025 60  0001 C CNN
+	1    5000 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX13
+U 1 1 5F06DE24
+P 5700 3050
+F 0 "MX13" H 5733 3273 60  0000 C CNN
+F 1 "MX-NoLED" H 5733 3199 20  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" H 5075 3025 60  0001 C CNN
+F 3 "" H 5075 3025 60  0001 C CNN
+	1    5700 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 3000 5300 3000
+Wire Wire Line
+	5850 3000 6000 3000
+Wire Wire Line
+	6550 3000 6700 3000
+$Comp
+L Device:D_Small D5
+U 1 1 5F071550
+P 5600 1900
+F 0 "D5" V 5646 1830 50  0000 R CNN
+F 1 "1N4148" V 5555 1830 50  0000 R CNN
+F 2 "USER_FOOTPRINTS:D_DO-35_SOD27_P5.08mm_Horizontal" V 5600 1900 50  0001 C CNN
+F 3 "~" V 5600 1900 50  0001 C CNN
+	1    5600 1900
+	0    -1   -1   0   
+$EndComp
+Connection ~ 4950 4050
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX15
+U 1 1 5F0718B4
+P 7100 3050
+F 0 "MX15" H 7133 3273 60  0000 C CNN
+F 1 "MX-NoLED" H 7133 3199 20  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" H 6475 3025 60  0001 C CNN
+F 3 "" H 6475 3025 60  0001 C CNN
+	1    7100 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 4050 5650 4050
+$Comp
+L Device:D_Small D14
+U 1 1 5F072868
+P 6350 3300
+F 0 "D14" V 6396 3230 50  0000 R CNN
+F 1 "1N4148" V 6305 3230 50  0000 R CNN
+F 2 "USER_FOOTPRINTS:D_DO-35_SOD27_P5.08mm_Horizontal" V 6350 3300 50  0001 C CNN
+F 3 "~" V 6350 3300 50  0001 C CNN
+	1    6350 3300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX16
+U 1 1 5F072C76
+P 5000 3700
+F 0 "MX16" H 5033 3923 60  0000 C CNN
+F 1 "MX-NoLED" H 5033 3849 20  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" H 4375 3675 60  0001 C CNN
+F 3 "" H 4375 3675 60  0001 C CNN
+	1    5000 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Small D17
+U 1 1 5F073006
+P 5650 3950
+F 0 "D17" V 5696 3880 50  0000 R CNN
+F 1 "1N4148" V 5605 3880 50  0000 R CNN
+F 2 "USER_FOOTPRINTS:D_DO-35_SOD27_P5.08mm_Horizontal" V 5650 3950 50  0001 C CNN
+F 3 "~" V 5650 3950 50  0001 C CNN
+	1    5650 3950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX14
+U 1 1 5F073511
+P 6400 3050
+F 0 "MX14" H 6433 3273 60  0000 C CNN
+F 1 "MX-NoLED" H 6433 3199 20  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" H 5775 3025 60  0001 C CNN
+F 3 "" H 5775 3025 60  0001 C CNN
+	1    6400 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7250 3650 7400 3650
+Wire Wire Line
+	6550 3650 6700 3650
+Connection ~ 5300 2300
+Connection ~ 6000 2300
+Connection ~ 6700 2300
+Wire Wire Line
+	5300 950  5300 1600
+Connection ~ 5300 950 
+Wire Wire Line
+	5300 1600 5300 2300
+Connection ~ 5300 1600
+Wire Wire Line
+	5300 2300 5300 3000
+Wire Wire Line
+	5300 3650 5150 3650
+Wire Wire Line
+	6000 2300 6000 3000
+Connection ~ 6000 1600
+Wire Wire Line
+	6000 1600 6000 2300
+Wire Wire Line
+	6000 750  6000 950 
+Wire Wire Line
+	6700 750  6700 950 
+Connection ~ 6700 1600
+Wire Wire Line
+	6700 950  6550 950 
+Connection ~ 6700 950 
+Wire Wire Line
+	6700 950  6700 1600
+Wire Wire Line
+	6000 950  5850 950 
+Connection ~ 6000 950 
+Wire Wire Line
+	6000 950  6000 1600
+Wire Wire Line
+	7250 950  7400 950 
+Connection ~ 7400 950 
+Wire Wire Line
+	7400 750  7400 950 
+Wire Wire Line
+	7400 2300 7400 3000
+Connection ~ 7400 2300
+Connection ~ 6700 3000
+Wire Wire Line
+	4950 3400 5650 3400
+Wire Wire Line
+	5300 3650 5300 3000
+Connection ~ 5300 3000
+Wire Wire Line
+	5650 3400 6350 3400
+Wire Wire Line
+	6350 2700 7050 2700
+Wire Wire Line
+	6700 2300 6700 3000
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX17
+U 1 1 5F0BD8FB
+P 5700 3700
+F 0 "MX17" H 5733 3923 60  0000 C CNN
+F 1 "MX-NoLED" H 5733 3849 20  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" H 5075 3675 60  0001 C CNN
+F 3 "" H 5075 3675 60  0001 C CNN
+	1    5700 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX18
+U 1 1 5F0BDEEC
+P 6400 3700
+F 0 "MX18" H 6433 3923 60  0000 C CNN
+F 1 "MX-NoLED" H 6433 3849 20  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" H 5775 3675 60  0001 C CNN
+F 3 "" H 5775 3675 60  0001 C CNN
+	1    6400 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX19
+U 1 1 5F0BE4FC
+P 7100 3700
+F 0 "MX19" H 7133 3923 60  0000 C CNN
+F 1 "MX-NoLED" H 7133 3849 20  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" H 6475 3675 60  0001 C CNN
+F 3 "" H 6475 3675 60  0001 C CNN
+	1    7100 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7250 3000 7400 3000
+Connection ~ 7400 3000
+Wire Wire Line
+	7400 3000 7400 3650
+Connection ~ 5650 4050
+Wire Wire Line
+	4650 1350 4950 1350
+Wire Wire Line
+	5650 4050 6350 4050
+$Comp
+L Device:D_Small D18
+U 1 1 5F0D3C8D
+P 6350 3950
+F 0 "D18" V 6396 3880 50  0000 R CNN
+F 1 "1N4148" V 6305 3880 50  0000 R CNN
+F 2 "USER_FOOTPRINTS:D_DO-35_SOD27_P5.08mm_Horizontal" V 6350 3950 50  0001 C CNN
+F 3 "~" V 6350 3950 50  0001 C CNN
+	1    6350 3950
+	0    -1   -1   0   
+$EndComp
+Connection ~ 6350 4050
+Wire Wire Line
+	6350 4050 7050 4050
+$Comp
+L Device:D_Small D19
+U 1 1 5F0D41FA
+P 7050 3950
+F 0 "D19" V 7096 3880 50  0000 R CNN
+F 1 "1N4148" V 7005 3880 50  0000 R CNN
+F 2 "USER_FOOTPRINTS:D_DO-35_SOD27_P5.08mm_Horizontal" V 7050 3950 50  0001 C CNN
+F 3 "~" V 7050 3950 50  0001 C CNN
+	1    7050 3950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Small D0
+U 1 1 5F0D7952
+P 4950 1250
+F 0 "D0" V 4996 1180 50  0000 R CNN
+F 1 "1N4148" V 4905 1180 50  0000 R CNN
+F 2 "USER_FOOTPRINTS:D_DO-35_SOD27_P5.08mm_Horizontal" V 4950 1250 50  0001 C CNN
+F 3 "~" V 4950 1250 50  0001 C CNN
+	1    4950 1250
+	0    -1   -1   0   
+$EndComp
+Connection ~ 4950 1350
+Wire Wire Line
+	4950 1350 5650 1350
+Wire Wire Line
+	7250 1600 7400 1600
+Connection ~ 7400 1600
+Wire Wire Line
+	7400 1600 7400 2300
+Wire Wire Line
+	5850 3650 6000 3650
+Wire Wire Line
+	6000 3650 6000 3000
+Connection ~ 6000 3000
+Connection ~ 6350 3400
+Wire Wire Line
+	6350 3400 7050 3400
+Wire Wire Line
+	6700 3000 6700 3650
+Wire Wire Line
+	6700 1600 6700 2300
+Wire Wire Line
+	6350 2000 7050 2000
+Connection ~ 6350 2000
+$Comp
+L Switch:SW_Push SW1
+U 1 1 5F17330E
+P 2800 5500
+F 0 "SW1" H 2800 5785 50  0000 C CNN
+F 1 "SW_Push" H 2800 5694 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm" H 2800 5700 50  0001 C CNN
+F 3 "~" H 2800 5700 50  0001 C CNN
+	1    2800 5500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 5500 3200 5500
+Wire Wire Line
+	3200 5500 3200 5450
+Connection ~ 3200 5500
+Wire Wire Line
+	3200 5500 3300 5500
+Wire Wire Line
+	3200 5150 3200 5100
+Wire Wire Line
+	2600 5500 2500 5500
+Wire Wire Line
+	2500 5500 2500 5550
+$Comp
+L keebio:ProMicro U1
+U 1 1 5F0D1278
+P 1950 6800
+F 0 "U1" H 1950 7637 60  0000 C CNN
+F 1 "ProMicro" H 1950 7531 60  0000 C CNN
+F 2 "Keebio-Parts:ArduinoProMicro" V 3000 4300 60  0001 C CNN
+F 3 "" V 3000 4300 60  0001 C CNN
+	1    1950 6800
+	1    0    0    -1  
+$EndComp
+Text GLabel 2650 7350 2    50   Input ~ 0
+row4
+Text GLabel 2650 6950 2    50   Input ~ 0
+row3
+Text GLabel 2650 6850 2    50   Input ~ 0
+row2
+Text GLabel 2650 6750 2    50   Input ~ 0
+row1
+Text GLabel 2650 6650 2    50   Input ~ 0
+row0
+Text GLabel 2650 6450 2    50   Input ~ 0
+reset
+Wire Wire Line
+	2650 6550 3000 6550
+Wire Wire Line
+	3000 6550 3000 6500
+Wire Wire Line
+	2650 6350 2750 6350
+Wire Wire Line
+	2750 6350 2750 5900
+Wire Wire Line
+	2750 5900 1050 5900
+Wire Wire Line
+	1050 5900 1050 6450
+Wire Wire Line
+	1050 6550 1250 6550
+Connection ~ 1050 6550
+Wire Wire Line
+	1050 6550 1050 6650
+Wire Wire Line
+	1250 6450 1050 6450
+Connection ~ 1050 6450
+Wire Wire Line
+	1050 6450 1050 6550
+NoConn ~ 1250 6250
+NoConn ~ 1250 6350
+NoConn ~ 1250 6650
+NoConn ~ 1250 6750
+NoConn ~ 1250 6850
+NoConn ~ 1250 6950
+NoConn ~ 2650 7250
+NoConn ~ 2650 7150
+NoConn ~ 2650 7050
+NoConn ~ 2650 6250
+Wire Wire Line
+	5850 7200 5850 7150
+Wire Wire Line
+	5850 7150 5750 7150
+Wire Wire Line
+	5450 7150 5300 7150
+Wire Wire Line
+	5000 7150 4900 7150
+Wire Wire Line
+	4900 7150 4900 7100
+$Comp
+L power:+5V #PWR0103
+U 1 1 5F1E530A
+P 4900 7100
+F 0 "#PWR0103" H 4900 6950 50  0001 C CNN
+F 1 "+5V" H 4915 7273 50  0000 C CNN
+F 2 "" H 4900 7100 50  0001 C CNN
+F 3 "" H 4900 7100 50  0001 C CNN
+	1    4900 7100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0101
+U 1 1 5F1E5D66
+P 3000 6500
+F 0 "#PWR0101" H 3000 6350 50  0001 C CNN
+F 1 "+5V" H 3015 6673 50  0000 C CNN
+F 2 "" H 3000 6500 50  0001 C CNN
+F 3 "" H 3000 6500 50  0001 C CNN
+	1    3000 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0104
+U 1 1 5F1E6600
+P 2500 5550
+F 0 "#PWR0104" H 2500 5300 50  0001 C CNN
+F 1 "GND" H 2505 5377 50  0000 C CNN
+F 2 "" H 2500 5550 50  0001 C CNN
+F 3 "" H 2500 5550 50  0001 C CNN
+	1    2500 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0105
+U 1 1 5F1E7740
+P 3200 5100
+F 0 "#PWR0105" H 3200 4950 50  0001 C CNN
+F 1 "+5V" H 3215 5273 50  0000 C CNN
+F 2 "" H 3200 5100 50  0001 C CNN
+F 3 "" H 3200 5100 50  0001 C CNN
+	1    3200 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0106
+U 1 1 5F1E8AB9
+P 5850 7200
+F 0 "#PWR0106" H 5850 6950 50  0001 C CNN
+F 1 "GND" H 5855 7027 50  0000 C CNN
+F 2 "" H 5850 7200 50  0001 C CNN
+F 3 "" H 5850 7200 50  0001 C CNN
+	1    5850 7200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 5F1E95E7
+P 1050 6650
+F 0 "#PWR0102" H 1050 6400 50  0001 C CNN
+F 1 "GND" H 1055 6477 50  0000 C CNN
+F 2 "" H 1050 6650 50  0001 C CNN
+F 3 "" H 1050 6650 50  0001 C CNN
+	1    1050 6650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0107
+U 1 1 5F1EA553
+P 4500 4950
+F 0 "#PWR0107" H 4500 4800 50  0001 C CNN
+F 1 "+5V" H 4515 5123 50  0000 C CNN
+F 2 "" H 4500 4950 50  0001 C CNN
+F 3 "" H 4500 4950 50  0001 C CNN
+	1    4500 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5F1EADD3
+P 4500 4950
+F 0 "#FLG0101" H 4500 5025 50  0001 C CNN
+F 1 "PWR_FLAG" H 4500 5123 50  0000 C CNN
+F 2 "" H 4500 4950 50  0001 C CNN
+F 3 "~" H 4500 4950 50  0001 C CNN
+	1    4500 4950
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0108
+U 1 1 5F1EC044
+P 4850 4950
+F 0 "#PWR0108" H 4850 4700 50  0001 C CNN
+F 1 "GND" H 4855 4777 50  0000 C CNN
+F 2 "" H 4850 4950 50  0001 C CNN
+F 3 "" H 4850 4950 50  0001 C CNN
+	1    4850 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 5F1ED117
+P 4850 4950
+F 0 "#FLG0102" H 4850 5025 50  0001 C CNN
+F 1 "PWR_FLAG" H 4850 5123 50  0000 C CNN
+F 2 "" H 4850 4950 50  0001 C CNN
+F 3 "~" H 4850 4950 50  0001 C CNN
+	1    4850 4950
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

@@ -1,0 +1,18 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    </head>
+    <body>
+    <h1>C:\KiCadProjects\custom-numpad\numpad.sch</h1>
+    <p>23.08.2020 12:53:56</p>
+    <p>Eeschema (5.1.6)-1</p>
+    <p><b>Component Count:</b>45</p>
+    <table>
+    <tr><th style='width:640px'>Ref</th><th>Qnty</th><th>Value</th><th>Part</th><th>Datasheet</th><th>Description</th><th>Vendor</th></tr><tr><td>D0, D1, D2, D3, D4, D5, D6, D7, D8, D9, D10, D11, D12, D13, D14, D15, D16, D17, D18, D19</td><td>20</td><td>1N4148</td><td>Device:D_Small</td><td>~</td><td>Diode, small symbol</td><td></td></tr><tr><td>LED1</td><td>1</td><td>POWER</td><td>Device:LED</td><td>~</td><td>Light emitting diode</td><td></td></tr><tr><td>MX0, MX1, MX2, MX3, MX4, MX5, MX6, MX7, MX8, MX9, MX10, MX11, MX12, MX13, MX14, MX15, MX16, MX17, MX18, MX19</td><td>20</td><td>MX-NoLED</td><td>MX_Alps_Hybrid:MX-NoLED</td><td></td><td></td><td></td></tr><tr><td>R1</td><td>1</td><td>1.5k</td><td>Device:R</td><td>~</td><td>Resistor</td><td></td></tr><tr><td>R6</td><td>1</td><td>10K</td><td>Device:R</td><td>~</td><td>Resistor</td><td></td></tr><tr><td>SW1</td><td>1</td><td>SW_Push</td><td>Switch:SW_Push</td><td>~</td><td>Push button switch, generic, two pins</td><td></td></tr><tr><td>U1</td><td>1</td><td>ProMicro</td><td>keebio:ProMicro</td><td></td><td></td><td></td></tr><!--TABLEROW-->
+    </table>
+    </body>
+</html>
+    
